@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sqltypes="http://schemas.microsoft.com/sqlserver/2004/sqltypes" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:ns1="urn:schemas-microsoft-com:sql:SqlRowSet1" targetNamespace="urn:schemas-microsoft-com:sql:SqlRowSet1" elementFormDefault="qualified">
+	<xsd:import namespace="http://schemas.microsoft.com/sqlserver/2004/sqltypes" schemaLocation="SqlTypes.xsd"/>
+	<xsd:element name="SqlRowSet1" msdata:DataSetName="SqlDataSet" msdata:DataSetNamespace="urn:schemas-microsoft-com:sql:SqlDataSet" msdata:IsDataSet="true">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="row" minOccurs="0" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="PrimeId" type="sqltypes:bigint" minOccurs="0"/>
+							<xsd:element name="beleidsmVerantwOverheid" minOccurs="0">
+								<xsd:simpleType>
+									<xsd:restriction base="sqltypes:nvarchar" sqltypes:localeId="1033" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth" sqltypes:sqlSortId="52">
+										<xsd:maxLength value="255"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="besluitnummer" minOccurs="0">
+								<xsd:simpleType>
+									<xsd:restriction base="sqltypes:nvarchar" sqltypes:localeId="1033" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth" sqltypes:sqlSortId="52">
+										<xsd:maxLength value="255"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="datum" type="sqltypes:datetime" minOccurs="0"/>
+							<xsd:element name="historisch" type="sqltypes:bit" minOccurs="0"/>
+							<xsd:element name="identificatie" minOccurs="0">
+								<xsd:simpleType>
+									<xsd:restriction base="sqltypes:nvarchar" sqltypes:localeId="1033" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth" sqltypes:sqlSortId="52">
+										<xsd:maxLength value="255"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="naam" minOccurs="0">
+								<xsd:simpleType>
+									<xsd:restriction base="sqltypes:nvarchar" sqltypes:localeId="1033" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth" sqltypes:sqlSortId="52">
+										<xsd:maxLength value="255"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="naamOverheid" minOccurs="0">
+								<xsd:simpleType>
+									<xsd:restriction base="sqltypes:nvarchar" sqltypes:localeId="1033" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth" sqltypes:sqlSortId="52">
+										<xsd:maxLength value="255"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="overheidscode" minOccurs="0">
+								<xsd:simpleType>
+									<xsd:restriction base="sqltypes:nvarchar" sqltypes:localeId="1033" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth" sqltypes:sqlSortId="52">
+										<xsd:maxLength value="255"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="planstatus" minOccurs="0">
+								<xsd:simpleType>
+									<xsd:restriction base="sqltypes:nvarchar" sqltypes:localeId="1033" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth" sqltypes:sqlSortId="52">
+										<xsd:maxLength value="255"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="typePlan" minOccurs="0">
+								<xsd:simpleType>
+									<xsd:restriction base="sqltypes:nvarchar" sqltypes:localeId="1033" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth" sqltypes:sqlSortId="52">
+										<xsd:maxLength value="255"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="versieIMRO" minOccurs="0">
+								<xsd:simpleType>
+									<xsd:restriction base="sqltypes:nvarchar" sqltypes:localeId="1033" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth" sqltypes:sqlSortId="52">
+										<xsd:maxLength value="255"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="verwijzingNorm" minOccurs="0">
+								<xsd:simpleType>
+									<xsd:restriction base="sqltypes:nvarchar" sqltypes:localeId="1033" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth" sqltypes:sqlSortId="52"/>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="startDatum" type="sqltypes:datetime" minOccurs="0"/>
+							<xsd:element name="eindDatum" type="sqltypes:datetime" minOccurs="0"/>
+							<xsd:element name="processed" type="sqltypes:bit" minOccurs="0"/>
+							<xsd:element name="ziplocation" minOccurs="0">
+								<xsd:simpleType>
+									<xsd:restriction base="sqltypes:nvarchar" sqltypes:localeId="1033" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth" sqltypes:sqlSortId="52">
+										<xsd:maxLength value="255"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="IsZipOk" type="sqltypes:bit" minOccurs="0"/>
+							<xsd:element name="active_P1" type="sqltypes:bit" minOccurs="0"/>
+							<xsd:element name="active_P3" type="sqltypes:bit" minOccurs="0"/>
+							<xsd:element name="IsPB" type="sqltypes:bit" minOccurs="0"/>
+							<xsd:element name="IDN_dotless" minOccurs="0">
+								<xsd:simpleType>
+									<xsd:restriction base="sqltypes:varchar" sqltypes:localeId="1033" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth" sqltypes:sqlSortId="52">
+										<xsd:maxLength value="50"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,15 @@
+De stappen om de WSDL soap code te genereren:
+
+-Download de WSDL file en sla deze op als utrecht.xml (https://db.tercera-ro.nl/utrecht?wsdl)
+-Zorg er voor dat het bestand valid is. (er moet ergens een reference naar xsd:schema weg, op regel 218, nadat het geformat is)
+-Voer het volgende commando uit:
+wsimport -Xnocompile -d src schemas/utrecht.wsdl
+
+De verwijzing van de code is dan nog wel naar het locale bestand. Pas dit aan in de GetUtrecht classe die is gegenereerd.
+Dit kan de https:// url zijn maar ook het relatieve pad vanuit het classpath(niet getest).
+
+Om de schema's uit te lezen in de project /schemas/ dir te plaatsen moet de SchemaUtil class worden gerund.
+Deze maakt 2 schema's aan in de schema's directory. Dit zijn de schema's die nodig zijn om met jaxb de classen te maken.
+
+Voer daarna het volgende commando uit om de code te genereren.
+xjc schemas/PlanSchema.xsd -d src

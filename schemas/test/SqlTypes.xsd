@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://schemas.microsoft.com/sqlserver/2004/sqltypes">
+	<xsd:simpleType name="bigint">
+		<xsd:restriction base="xsd:long"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="nvarchar">
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="datetime">
+		<xsd:restriction base="xsd:dateTime">
+			<xsd:pattern value="((000[1-9])|(00[1-9][0-9])|(0[1-9][0-9]{2})|([1-9][0-9]{3}))-((0[1-9])|(1[012]))-((0[1-9])|([12][0-9])|(3[01]))T(([01][0-9])|(2[0-3]))(:[0-5][0-9]){2}(\.[0-9]{2}[037])?"/>
+			<xsd:minInclusive value="1753-01-01T00:00:00.000"/>
+			<xsd:maxInclusive value="9999-12-31T23:59:59.997"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="bit">
+		<xsd:restriction base="xsd:boolean"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="varchar">
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+</xsd:schema>
